@@ -1,0 +1,3 @@
+C:\cmake-3.26.3-windows-x86_64\bin\cmake.exe -E rm -f CMakeFiles\fifteen-puzzle.dir/objects.a
+C:\mingw32\bin\ar.exe qc CMakeFiles\fifteen-puzzle.dir/objects.a @CMakeFiles\fifteen-puzzle.dir\objects1.rsp
+C:\mingw32\bin\g++.exe -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles\fifteen-puzzle.dir/objects.a -Wl,--no-whole-archive -o fifteen-puzzle.exe -Wl,--out-implib,libfifteen-puzzle.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\fifteen-puzzle.dir\linkLibs.rsp

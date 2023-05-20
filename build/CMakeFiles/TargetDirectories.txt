@@ -1,0 +1,3 @@
+C:/Users/Azidi/Desktop/coursework/fifteen-puzzle/build/CMakeFiles/fifteen-puzzle.dir
+C:/Users/Azidi/Desktop/coursework/fifteen-puzzle/build/CMakeFiles/edit_cache.dir
+C:/Users/Azidi/Desktop/coursework/fifteen-puzzle/build/CMakeFiles/rebuild_cache.dir
