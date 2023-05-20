@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.22)
+
+project(fifteen-puzzle)
+
+set(CMAKE_CXX_COMPILER "C:/mingw32/bin/g++.exe")
+
+add_executable(fifteen-puzzle main.cpp)
