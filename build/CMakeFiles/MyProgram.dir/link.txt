@@ -1,3 +1,0 @@
-C:\cmake-3.26.3-windows-x86_64\bin\cmake.exe -E rm -f CMakeFiles\MyProgram.dir/objects.a
-C:\mingw32\bin\ar.exe qc CMakeFiles\MyProgram.dir/objects.a @CMakeFiles\MyProgram.dir\objects1.rsp
-C:\mingw32\bin\g++.exe -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles\MyProgram.dir/objects.a -Wl,--no-whole-archive -o MyProgram.exe -Wl,--out-implib,libMyProgram.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\MyProgram.dir\linkLibs.rsp
