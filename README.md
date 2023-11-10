@@ -2,7 +2,7 @@
 ## Инструкциия по примению
 1. Сколонируйте репозиторий:
     ```
-    $ git clone git@github.com:trpo2023/cw-ip_213_pwgen.git
+    $ git clone git@github.com:DanielTernovskiy/fifteen-puzzle.git
     ```
 2. Сборка и запуск проекта:
     ```
