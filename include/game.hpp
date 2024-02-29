@@ -1,28 +1,33 @@
 #pragma once
-
-#include <cstdlib>
-
-#include "SFML/Graphics.hpp"
-#include "SFML/Audio.hpp"
-
-const int SIZE = 16;
-const int BUTTON_DISTANCE = 160;
+#include <iostream>
+#include "board.hpp"
+#include "settings.hpp"
 
 using namespace sf;
 
-Sprite* fillSprites ();
-void draw(RenderWindow&, Sprite*);
-void shuffle(Sprite*, int*);
-bool checkWin (int*);
-bool checkPuzzle(int*);
-int moveUp (Sprite*, int* , int*);
-int moveDown (Sprite*, int*, int*);
-int moveLeft (Sprite*, int*, int*);
-int moveRight (Sprite*, int*, int*);
+class Game : public Board {
+    
+    private:
+        Settings settings;
+        Texture *textures;
+        std::vector<Sprite> sprites;
+        
+    private:
+        void loadTextures();
+        void setSprites ();
+        void shuffle();
+        void getSolvedPuzzle();
 
+        bool checkWin(const std::vector<int>& board) override;
+        bool checkPuzzle(const std::vector<int>& board) override;
+        void moveUp (std::vector<Sprite> &sprites, std::vector<int> &board, int& idx) override;
+        void moveDown (std::vector<Sprite> &sprites, std::vector<int> &board, int& idx) override;
+        void moveLeft (std::vector<Sprite> &sprites, std::vector<int> &board, int& idx) override;
+        void moveRight (std::vector<Sprite> &sprites, std::vector<int> &board, int& idx) override;
+        void draw(RenderWindow &window, std::vector<Sprite>& sprites);
 
-
-
-
-
-
+    public:
+        Game ();
+        ~Game();
+        void play();
+};
